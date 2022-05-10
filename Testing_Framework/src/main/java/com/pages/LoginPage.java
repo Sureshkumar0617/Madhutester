@@ -38,7 +38,8 @@ public class LoginPage {
 		driver.findElement(LOGIN).click();
 	}
 
-	public HomePage doLogin(String un, String pwd) {
+	public
+	HomePage doLogin(String un, String pwd) {
 		System.out.println("login with: " + un + " and " + pwd);
 		driver.findElement(Username).sendKeys(un);
 		driver.findElement(Password).sendKeys(pwd);
