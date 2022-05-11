@@ -8,8 +8,7 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 @CucumberOptions(
 		plugin = {"pretty",
 				"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
-				"timeline:test-output-thread/"
-				}, 
+				"timeline:test-output-thread/"	}, 
 		monochrome = true,
 		glue = { "parallel" },
 		features = { "src/test/resources/parallel"}

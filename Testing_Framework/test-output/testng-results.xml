@@ -2,19 +2,35 @@
 <testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="14095" started-at="2022-05-10T15:10:33 IST" finished-at="2022-05-10T15:10:48 IST">
+  <suite name="Default suite" duration-ms="16535" started-at="2022-05-10T23:46:25 IST" finished-at="2022-05-10T23:46:41 IST">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.ParallelRun@17695df3]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Default test" duration-ms="14095" started-at="2022-05-10T15:10:33 IST" finished-at="2022-05-10T15:10:48 IST">
+    <test name="Default test" duration-ms="16535" started-at="2022-05-10T23:46:25 IST" finished-at="2022-05-10T23:46:41 IST">
       <class name="parallel.ParallelRun">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:parallel.ParallelRun@17695df3]" name="setUpClass" is-config="true" duration-ms="524" started-at="2022-05-10T15:10:33 IST" finished-at="2022-05-10T15:10:34 IST">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:parallel.ParallelRun@17695df3]" name="setUpClass" is-config="true" duration-ms="566" started-at="2022-05-10T23:46:25 IST" finished-at="2022-05-10T23:46:25 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.ParallelRun@17695df3]" name="runScenario" duration-ms="10826" started-at="2022-05-10T15:10:34 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-10T15:10:45 IST">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.ParallelRun@17695df3]" name="runScenario" duration-ms="11944" started-at="2022-05-10T23:46:25 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-10T23:46:37 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login page title"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Login Page Feature]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.ParallelRun@17695df3]" name="runScenario" duration-ms="13279" started-at="2022-05-10T23:46:25 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-10T23:46:39 IST">
           <params>
             <param index="0">
               <value>
@@ -41,23 +57,7 @@ at ✽.accounts section count should be 11(classpath:parallel/Homepage.feature:2
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.ParallelRun@17695df3]" name="runScenario" duration-ms="10061" started-at="2022-05-10T15:10:34 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-10T15:10:44 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Login page title"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Optional[Login Page Feature]"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:parallel.ParallelRun@17695df3]" name="tearDownClass" is-config="true" duration-ms="2700" started-at="2022-05-10T15:10:45 IST" finished-at="2022-05-10T15:10:48 IST">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:parallel.ParallelRun@17695df3]" name="tearDownClass" is-config="true" duration-ms="2642" started-at="2022-05-10T23:46:39 IST" finished-at="2022-05-10T23:46:41 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
