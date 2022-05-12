@@ -12,7 +12,7 @@ public class HomePage {
 	
 	private WebDriver driver;
 
-	private By HomeSections = By.cssSelector("div#mainMenu b");
+	private By HomeSections = By.cssSelector("div#mainMenu");
 	public HomePage(WebDriver driver) {
 		this.driver = driver;
 	}

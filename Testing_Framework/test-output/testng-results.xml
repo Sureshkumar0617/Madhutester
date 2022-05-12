@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
+<testng-results skipped="0" failed="1" ignored="0" total="3" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="16535" started-at="2022-05-10T23:46:25 IST" finished-at="2022-05-10T23:46:41 IST">
+  <suite name="Default suite" duration-ms="19677" started-at="2022-05-12T19:23:13 IST" finished-at="2022-05-12T19:23:33 IST">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.ParallelRun@17695df3]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Default test" duration-ms="16535" started-at="2022-05-10T23:46:25 IST" finished-at="2022-05-10T23:46:41 IST">
+    <test name="Default test" duration-ms="19677" started-at="2022-05-12T19:23:13 IST" finished-at="2022-05-12T19:23:33 IST">
       <class name="parallel.ParallelRun">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:parallel.ParallelRun@17695df3]" name="setUpClass" is-config="true" duration-ms="566" started-at="2022-05-10T23:46:25 IST" finished-at="2022-05-10T23:46:25 IST">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:parallel.ParallelRun@17695df3]" name="setUpClass" is-config="true" duration-ms="506" started-at="2022-05-12T19:23:13 IST" finished-at="2022-05-12T19:23:14 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.ParallelRun@17695df3]" name="runScenario" duration-ms="11944" started-at="2022-05-10T23:46:25 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-10T23:46:37 IST">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.ParallelRun@17695df3]" name="runScenario" duration-ms="12983" started-at="2022-05-12T19:23:14 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-12T19:23:27 IST">
           <params>
             <param index="0">
               <value>
@@ -30,7 +30,23 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.ParallelRun@17695df3]" name="runScenario" duration-ms="13279" started-at="2022-05-10T23:46:25 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-10T23:46:39 IST">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.ParallelRun@17695df3]" name="runScenario" duration-ms="17018" started-at="2022-05-12T19:23:14 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-12T19:23:31 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Adding Candidate in Recuritment Tab"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Account Page Feature]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.ParallelRun@17695df3]" name="runScenario" duration-ms="13881" started-at="2022-05-12T19:23:14 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-12T19:23:28 IST">
           <params>
             <param index="0">
               <value>
@@ -49,15 +65,15 @@
 at org.junit.Assert.fail(Assert.java:86)
 at org.junit.Assert.assertTrue(Assert.java:41)
 at org.junit.Assert.assertTrue(Assert.java:52)
-at parallel.Homepagestepdefinition.accounts_section_count_should_be(Homepagestepdefinition.java:58)
-at ✽.accounts section count should be 11(classpath:parallel/Homepage.feature:23)
+at parallel.Homepagestepdefinition.user_gets_home_section(Homepagestepdefinition.java:51)
+at ✽.user gets Home section(classpath:parallel/Homepage.feature:11)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:parallel.ParallelRun@17695df3]" name="tearDownClass" is-config="true" duration-ms="2642" started-at="2022-05-10T23:46:39 IST" finished-at="2022-05-10T23:46:41 IST">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:parallel.ParallelRun@17695df3]" name="tearDownClass" is-config="true" duration-ms="2107" started-at="2022-05-12T19:23:31 IST" finished-at="2022-05-12T19:23:33 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
