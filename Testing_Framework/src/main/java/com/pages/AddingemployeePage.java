@@ -18,8 +18,10 @@ public class AddingemployeePage {
 	
 	
 
+
+	
 	public AddingemployeePage(WebDriver driver2) {
-		this.driver = driver2;
+		this.driver=driver2;
 	}
 
 

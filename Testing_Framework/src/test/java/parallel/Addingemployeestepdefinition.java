@@ -9,7 +9,7 @@ import io.cucumber.java.en.When;
 
 public class Addingemployeestepdefinition {
 
-	private AddingemployeePage addingemployeepage = new AddingemployeePage(DriverFactory.getDriver());
+	private AddingemployeePage addingemployeepage =  new AddingemployeePage(DriverFactory.getDriver());
 
 
 	

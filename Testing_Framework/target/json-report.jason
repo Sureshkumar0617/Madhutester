@@ -1,36 +1,12 @@
 
-Scenario: Adding Candidate in Recuritment Tab     [90m# src/test/resources/parallel/Addingemployee.feature:8[0m
-  [32mGiven [0m[32muser has already logged in to application[0m [90m# parallel.Homepagestepdefinition.user_has_already_logged_in_to_application(io.cucumber.datatable.DataTable)[0m
-  [32mGiven [0m[32muser click Recuritment Tab[0m                [90m# parallel.Addingemployeestepdefinition.user_click_recuritment_tab()[0m
-  [32mWhen [0m[32muser click Candidate tab[0m                   [90m# parallel.Addingemployeestepdefinition.user_click_candidate_tab()[0m
-  [32mAnd [0m[32muser click Add tab[0m                          [90m# parallel.Addingemployeestepdefinition.user_click_add_tab()[0m
-  [32mThen [0m[32muser enter first name [0m[32m[1m"Suresh"[0m             [90m# parallel.Addingemployeestepdefinition.user_enter_first_name_in_first_name_tab(java.lang.String)[0m
-  [32mThen [0m[32muser enter lastname [0m[32m[1m"Kumar"[0m                [90m# parallel.Addingemployeestepdefinition.user_enter_lastname_in_lastame_tab(java.lang.String)[0m
-  [32mThen [0m[32muser enter emailid [0m[32m[1m"suresh123@gmail.com"[0m   [90m# parallel.Addingemployeestepdefinition.user_enter_emailid_in_email_id_tab(java.lang.String)[0m
-  [32mAnd [0m[32muser click save button[0m                      [90m# parallel.Addingemployeestepdefinition.user_click_save_button()[0m
+Scenario Outline: Candidate scenario                                           [90m# src/test/resources/parallel/Addcandidate.feature:19[0m
+  [32mGiven [0m[32muser has already logged in to application[0m                              [90m# parallel.Homepagestepdefinition.user_has_already_logged_in_to_application(io.cucumber.datatable.DataTable)[0m
+  [32mGiven [0m[32muser navigates to candidate page[0m                                       [90m# parallel.Addcandidatestepdefinition.user_navigates_to_candidate_page()[0m
+  [32mWhen [0m[32muser fills the form from given sheetname [0m[32m[1m"Addcandidate"[0m[32m and rownumber [0m[32m[1m0[0m [90m# parallel.Addcandidatestepdefinition.user_fills_the_form_from_given_sheetname_and_rownumber(java.lang.String,java.lang.Integer)[0m
+  [32mAnd [0m[32muser clicks on send button[0m                                               [90m# parallel.Addcandidatestepdefinition.user_clicks_on_send_button()[0m
 
-@accounts
-Scenario: Home section count                      [90m# src/test/resources/parallel/Homepage.feature:9[0m
-  [32mGiven [0m[32muser has already logged in to application[0m [90m# parallel.Homepagestepdefinition.user_has_already_logged_in_to_application(io.cucumber.datatable.DataTable)[0m
-  [32mGiven [0m[32muser is on Home page[0m                      [90m# parallel.Homepagestepdefinition.user_is_on_home_page()[0m
-  [31mThen [0m[31muser gets Home section[0m                     [90m# parallel.Homepagestepdefinition.user_gets_home_section(io.cucumber.datatable.DataTable)[0m
-      [31mjava.lang.AssertionError
-	at org.junit.Assert.fail(Assert.java:86)
-	at org.junit.Assert.assertTrue(Assert.java:41)
-	at org.junit.Assert.assertTrue(Assert.java:52)
-	at parallel.Homepagestepdefinition.user_gets_home_section(Homepagestepdefinition.java:51)
-	at ✽.user gets Home section(file:///C:/Users/HP/eclipse-workspace/Testing_Framework/src/test/resources/parallel/Homepage.feature:11)
-[0m
-  [36mAnd [0m[36maccounts section count should be [0m[36m[1m11[0m         [90m# parallel.Homepagestepdefinition.accounts_section_count_should_be(java.lang.Integer)[0m
-
-    Embedding Home_section_count [image/png 105330 bytes]
-
-
-Scenario: Login page title              [90m# src/test/resources/parallel/Loginpage.feature:3[0m
-  [32mGiven [0m[32muser is on login page[0m           [90m# parallel.Loginpagestepdefinition.user_is_on_login_page()[0m
-  [32mWhen [0m[32muser gets the title of the page[0m  [90m# parallel.Loginpagestepdefinition.user_gets_the_title_of_the_page()[0m
-  [32mThen [0m[32mpage title should be [0m[32m[1m"OrangeHRM"[0m [90m# parallel.Loginpagestepdefinition.page_title_should_be(java.lang.String)[0m
-  [32mGiven [0m[32muser is on login page[0m           [90m# parallel.Loginpagestepdefinition.user_is_on_login_page()[0m
-  [32mWhen [0m[32muser enter username [0m[32m[1m"Admin"[0m      [90m# parallel.Loginpagestepdefinition.user_enter_username(java.lang.String)[0m
-  [32mAnd [0m[32muser enter password [0m[32m[1m"admin123"[0m    [90m# parallel.Loginpagestepdefinition.user_enter_password(java.lang.String)[0m
-  [32mAnd [0m[32muser click on login button[0m        [90m# parallel.Loginpagestepdefinition.user_click_on_login_button()[0m
+Scenario Outline: Candidate scenario                                           [90m# src/test/resources/parallel/Addcandidate.feature:20[0m
+  [32mGiven [0m[32muser has already logged in to application[0m                              [90m# parallel.Homepagestepdefinition.user_has_already_logged_in_to_application(io.cucumber.datatable.DataTable)[0m
+  [32mGiven [0m[32muser navigates to candidate page[0m                                       [90m# parallel.Addcandidatestepdefinition.user_navigates_to_candidate_page()[0m
+  [32mWhen [0m[32muser fills the form from given sheetname [0m[32m[1m"Addcandidate"[0m[32m and rownumber [0m[32m[1m1[0m [90m# parallel.Addcandidatestepdefinition.user_fills_the_form_from_given_sheetname_and_rownumber(java.lang.String,java.lang.Integer)[0m
+  [32mAnd [0m[32muser clicks on send button[0m                                               [90m# parallel.Addcandidatestepdefinition.user_clicks_on_send_button()[0m

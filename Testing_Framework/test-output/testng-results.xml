@@ -1,36 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="3" passed="2">
+<testng-results skipped="0" failed="1" ignored="0" total="5" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="19677" started-at="2022-05-12T19:23:13 IST" finished-at="2022-05-12T19:23:33 IST">
+  <suite name="Default suite" duration-ms="17883" started-at="2022-05-15T23:52:18 IST" finished-at="2022-05-15T23:52:36 IST">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.ParallelRun@17695df3]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Default test" duration-ms="19677" started-at="2022-05-12T19:23:13 IST" finished-at="2022-05-12T19:23:33 IST">
+    <test name="Default test" duration-ms="17883" started-at="2022-05-15T23:52:18 IST" finished-at="2022-05-15T23:52:36 IST">
       <class name="parallel.ParallelRun">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:parallel.ParallelRun@17695df3]" name="setUpClass" is-config="true" duration-ms="506" started-at="2022-05-12T19:23:13 IST" finished-at="2022-05-12T19:23:14 IST">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:parallel.ParallelRun@17695df3]" name="setUpClass" is-config="true" duration-ms="368" started-at="2022-05-15T23:52:18 IST" finished-at="2022-05-15T23:52:19 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.ParallelRun@17695df3]" name="runScenario" duration-ms="12983" started-at="2022-05-12T19:23:14 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-12T19:23:27 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Login page title"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Optional[Login Page Feature]"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.ParallelRun@17695df3]" name="runScenario" duration-ms="17018" started-at="2022-05-12T19:23:14 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-12T19:23:31 IST">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.ParallelRun@17695df3]" name="runScenario" duration-ms="15537" started-at="2022-05-15T23:52:19 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-15T23:52:34 IST">
           <params>
             <param index="0">
               <value>
@@ -46,7 +30,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.ParallelRun@17695df3]" name="runScenario" duration-ms="13881" started-at="2022-05-12T19:23:14 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-12T19:23:28 IST">
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.ParallelRun@17695df3]" name="runScenario" duration-ms="12645" started-at="2022-05-15T23:52:19 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-15T23:52:31 IST">
           <params>
             <param index="0">
               <value>
@@ -73,7 +57,55 @@ at ✽.user gets Home section(classpath:parallel/Homepage.feature:11)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:parallel.ParallelRun@17695df3]" name="tearDownClass" is-config="true" duration-ms="2107" started-at="2022-05-12T19:23:31 IST" finished-at="2022-05-12T19:23:33 IST">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.ParallelRun@17695df3]" name="runScenario" duration-ms="11633" started-at="2022-05-15T23:52:19 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-15T23:52:30 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login page title"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Login Page Feature]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.ParallelRun@17695df3]" name="runScenario" duration-ms="13618" started-at="2022-05-15T23:52:19 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-15T23:52:32 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Candidate scenario"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Candidate Feature]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.ParallelRun@17695df3]" name="runScenario" duration-ms="13619" started-at="2022-05-15T23:52:19 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-15T23:52:32 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Candidate scenario"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Candidate Feature]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:parallel.ParallelRun@17695df3]" name="tearDownClass" is-config="true" duration-ms="1953" started-at="2022-05-15T23:52:34 IST" finished-at="2022-05-15T23:52:36 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
