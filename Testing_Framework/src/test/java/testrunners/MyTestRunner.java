@@ -7,8 +7,8 @@ import io.cucumber.junit.CucumberOptions;
 
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = {"src/test/resources/parallel"},glue = {"parallel", "AppHooks"},
-plugin = {"pretty","com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:","timeline:test-output-thread/","pretty:target/json-report.jason"
+@CucumberOptions(features = {"src/test/resources/parallel/Loginpage.feature"},glue = {"StepDefinition", "AppHooks"},
+plugin = {"pretty","com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:","timeline:test-output-thread/","pretty:target/json-report.json"
 
 		
 })
