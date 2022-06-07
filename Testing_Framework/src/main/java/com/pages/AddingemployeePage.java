@@ -52,11 +52,11 @@ public class AddingemployeePage {
 	}
 	
 	public void enterLastname(String Lastname) {
-		driver.findElement(lastname).sendKeys("Lastname");
+		driver.findElement(lastname).sendKeys(Lastname);
 	}
 
     public void enterEmailid (String Emailid) {
-    	driver.findElement(email).sendKeys("Emailid");
+    	driver.findElement(email).sendKeys(Emailid);
     }
 
     public void clickonSavebutton() {

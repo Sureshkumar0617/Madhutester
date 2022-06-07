@@ -1,5 +1,7 @@
 package parallel;
 
+import java.io.IOException;
+
 import org.junit.Assert;
 
 import com.pages.LoginPage;
@@ -12,22 +14,28 @@ import io.cucumber.java.en.When;
 public class Loginpagestepdefinition {
 
 	private static String title;
+   
+	
+
 	private LoginPage loginPage = new LoginPage(DriverFactory.getDriver());
+	
+	
+	
 
 	
 	@Given("user is on login page")
 	public void user_is_on_login_page() {
 		DriverFactory.getDriver()
 		.get("https://opensource-demo.orangehrmlive.com/");
-
-	}
+			
+			}
 
 	@When("user gets the title of the page")
-	public void user_gets_the_title_of_the_page() {
+	public void user_gets_the_title_of_the_page()  {
 		title = loginPage.getLoginPageTitle();
 		System.out.println("Page title is: " + title);
-
-	}
+		
+			}
 
 	@Then("page title should be {string}")
 	public void page_title_should_be(String expectedTitleName) {
@@ -36,14 +44,27 @@ public class Loginpagestepdefinition {
 	}
 
 	@When("user enter username {string}")
-	public void user_enter_username(String username) {
+	public void user_enter_username(String username) throws IOException  {
+		
 		loginPage.enterUserName(username);
-
+       
+		
 	}
+		
+	
+
+
+
+		
 
 	@When("user enter password {string}")
-	public void user_enter_password(String password) {
+	
+	public void user_enter_password(String password)  {
+		
 		loginPage.enterPassword(password);
+		
+	
+	
 
 	}
 
@@ -54,4 +75,12 @@ public class Loginpagestepdefinition {
 
 	}
 
-}
+	
+
+		
+
+			
+	}
+
+
+

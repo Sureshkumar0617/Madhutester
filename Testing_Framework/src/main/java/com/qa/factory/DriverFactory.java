@@ -39,4 +39,7 @@ public class DriverFactory {
 	public static synchronized WebDriver getDriver() {
 		return tlDriver.get();
 	}
+				
+	
 }
+

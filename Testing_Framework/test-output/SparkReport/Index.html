@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Grasshopper Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">May 24, 2022 02:00:34 PM</span></a>
+<a href="#"><span class="badge badge-primary">Jun 7, 2022 11:28:40 AM</span></a>
 </li>
 </ul>
 </div>
@@ -52,6 +52,11 @@
 <span class="ico"><i class="fa fa-list"></i></span>
 </a>
 </li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
 <li class="nav-item dropdown" onclick="toggleView('exception-view')">
 <a id="nav-exception" class="dropdown-toggle" href="#">
 <span class="ico"><i class="fa fa-bug"></i></span>
@@ -66,19 +71,19 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>May 24, 2022 02:00:34 PM</h3>
+<h3>Jun 7, 2022 11:28:40 AM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>May 24, 2022 02:00:51 PM</h3>
+<h3>Jun 7, 2022 11:29:14 AM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Features Passed</p>
-<h3>0</h3>
+<h3>4</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -100,12 +105,12 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='0%'>
-<b>0</b> features passed
+<div><small data-tooltip='80%'>
+<b>4</b> features passed
 </small>
 </div>
 <div>
-<small data-tooltip='100%'><b>1</b> features failed,
+<small data-tooltip='20%'><b>1</b> features failed,
 <b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
@@ -123,9 +128,9 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='0%'><b>0</b> scenarios passed</small></div>
+<div><small data-tooltip='80%'><b>4</b> scenarios passed</small></div>
 <div>
-<small data-tooltip='100%'><b>1</b> scenarios failed,
+<small data-tooltip='20%'><b>1</b> scenarios failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -143,10 +148,10 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='62%'><b>5</b> steps passed</small></div>
+<div><small data-tooltip='96%'><b>62</b> steps passed</small></div>
 <div>
-<small data-tooltip='12%'><b>1</b> steps failed,
-<b>2</b> skipped, <b data-tooltip='%'>0</b> others
+<small data-tooltip='1%'><b>1</b> steps failed,
+<b>1</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
 </div>
@@ -162,10 +167,27 @@
 </div></div>
 <script>
 var timeline = {
-"Login Page Feature":15.419
+"Assign leave feature":30.704,"Account Page Feature":33.559,"Homepage Feature":21.21,"Candidate Feature":24.529,"Login Page Feature":27.856
 };
 </script>
 <div class="row">
+<div class="col-lg-6 col-md-12 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>@accounts</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
 <div class="col-lg-6 col-md-12 sysenv-container">
 <div class="card">
 <div class="card-header"><p>System/Environment</p></div>
@@ -197,21 +219,21 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 0,
+passParent: 4,
 failParent: 1,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
-passChild: 0,
+passChild: 4,
 failChild: 1,
 warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 5,
+passGrandChild: 62,
 failGrandChild: 1,
 warningGrandChild: 0,
-skipGrandChild: 2,
+skipGrandChild: 1,
 infoGrandChild: 0,
 eventsCount: 5,
 };
@@ -225,33 +247,40 @@ eventsCount: 5,
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
 <a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
 <div class="dropdown-divider"></div>
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
 </ul>
 </li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">@accounts</a>
+</ul>
+</li>
 </ul>
 </div>    <div class="test-list-wrapper scrollable">
       <ul class="test-list-item">
-        <li class="test-item"  status="fail" test-id="1"
+        <li class="test-item"  status="pass" test-id="1"
           author=""
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">Login Page Feature</p>
+            <p class="name">Assign leave feature</p>
             <p class="text-sm">
-              <span>2:00:35 PM</span> / <span>00:00:15:419</span>
-              <span class="badge fail-bg log float-right">Fail</span>
+              <span>11:28:41 AM</span> / <span>00:00:30:704</span>
+              <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">Login Page Feature</h5>
-<span class='badge badge-success'>05.24.2022 2:00:35 PM</span>
-<span class='badge badge-danger'>05.24.2022 2:00:51 PM</span>
-<span class='badge badge-default'>00:00:15:419</span>
+<h5 class="test-status text-pass">Assign leave feature</h5>
+<span class='badge badge-success'>06.07.2022 11:28:41 AM</span>
+<span class='badge badge-danger'>06.07.2022 11:29:11 AM</span>
+<span class='badge badge-default'>00:00:30:704</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -263,7 +292,371 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="2"><span class="badge log fail-bg mr-2">Fail</span>Login page title</div>
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Assigning leave for employee</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="parallel.Homepagestepdefinition.user_has_already_logged_in_to_application(io.cucumber.datatable.DataTable)">
+                <span>Given user has already logged in to application</span>
+      <div><table class='markup-table table '><tr><td>username</td><td>password</td></tr><tr><td>Admin</td><td>admin123</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>AppHooks.ApplicationHooks.as(io.cucumber.java.Scenario)</span>
+      <div>any name
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../embedded5.png' src="../embedded5.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.Assignleave_stepdefinition.user_navigates_to_leave_page()">
+                <span>Given user navigates to Leave page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>AppHooks.ApplicationHooks.as(io.cucumber.java.Scenario)</span>
+      <div>any name
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../embedded12.png' src="../embedded12.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.Assignleave_stepdefinition.user_click_the_assign_leave_tab()">
+                <span>When user click the Assign leave tab</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>AppHooks.ApplicationHooks.as(io.cucumber.java.Scenario)</span>
+      <div>any name
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../embedded17.png' src="../embedded17.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.Assignleave_stepdefinition.user_add_employee_name_in_employee_name_tab()">
+                <span>And user add employee name in employee name tab</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>AppHooks.ApplicationHooks.as(io.cucumber.java.Scenario)</span>
+      <div>any name
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../embedded19.png' src="../embedded19.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.Assignleave_stepdefinition.user_select_the_leave_type()">
+                <span>Then user select the leave type</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>AppHooks.ApplicationHooks.as(io.cucumber.java.Scenario)</span>
+      <div>any name
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../embedded22.png' src="../embedded22.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.Assignleave_stepdefinition.user_select_the_from_date()">
+                <span>When user select the from date</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>AppHooks.ApplicationHooks.as(io.cucumber.java.Scenario)</span>
+      <div>any name
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../embedded23.png' src="../embedded23.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.Assignleave_stepdefinition.user_select_the_to_date()">
+                <span>And user select the to date</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>AppHooks.ApplicationHooks.as(io.cucumber.java.Scenario)</span>
+      <div>any name
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../embedded26.png' src="../embedded26.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.Assignleave_stepdefinition.user_enter_the_comment()">
+                <span>And user enter the comment</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>AppHooks.ApplicationHooks.as(io.cucumber.java.Scenario)</span>
+      <div>any name
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../embedded28.png' src="../embedded28.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.Assignleave_stepdefinition.user_click_on_the_assign_button()">
+                <span>Then user click on the Assign button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>AppHooks.ApplicationHooks.as(io.cucumber.java.Scenario)</span>
+      <div>any name
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../embedded30.png' src="../embedded30.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="3"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Account Page Feature</p>
+            <p class="text-sm">
+              <span>11:28:41 AM</span> / <span>00:00:33:559</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Account Page Feature</h5>
+<span class='badge badge-success'>06.07.2022 11:28:41 AM</span>
+<span class='badge badge-danger'>06.07.2022 11:29:14 AM</span>
+<span class='badge badge-default'>00:00:33:559</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="4"><span class="badge log pass-bg mr-2">Pass</span>Adding Candidate in Recuritment Tab</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="parallel.Homepagestepdefinition.user_has_already_logged_in_to_application(io.cucumber.datatable.DataTable)">
+                <span>Given user has already logged in to application</span>
+      <div><table class='markup-table table '><tr><td>username</td><td>password</td></tr><tr><td>Admin</td><td>admin123</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>AppHooks.ApplicationHooks.as(io.cucumber.java.Scenario)</span>
+      <div>any name
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../embedded7.png' src="../embedded7.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.Addingemployeestepdefinition.user_click_recuritment_tab()">
+                <span>Given user click Recuritment Tab</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>AppHooks.ApplicationHooks.as(io.cucumber.java.Scenario)</span>
+      <div>any name
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../embedded16.png' src="../embedded16.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.Addingemployeestepdefinition.user_click_candidate_tab()">
+                <span>When user click Candidate tab</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>AppHooks.ApplicationHooks.as(io.cucumber.java.Scenario)</span>
+      <div>any name
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../embedded21.png' src="../embedded21.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.Addingemployeestepdefinition.user_click_add_tab()">
+                <span>And user click Add tab</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>AppHooks.ApplicationHooks.as(io.cucumber.java.Scenario)</span>
+      <div>any name
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../embedded24.png' src="../embedded24.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.Addingemployeestepdefinition.user_enter_first_name_in_first_name_tab(java.lang.String)">
+                <span>Then user enter first name "Suresh"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>AppHooks.ApplicationHooks.as(io.cucumber.java.Scenario)</span>
+      <div>any name
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../embedded27.png' src="../embedded27.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.Addingemployeestepdefinition.user_enter_lastname_in_lastame_tab(java.lang.String)">
+                <span>Then user enter lastname "Kumar"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>AppHooks.ApplicationHooks.as(io.cucumber.java.Scenario)</span>
+      <div>any name
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../embedded29.png' src="../embedded29.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.Addingemployeestepdefinition.user_enter_emailid_in_email_id_tab(java.lang.String)">
+                <span>Then user enter emailid "suresh123@gmail.com"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>AppHooks.ApplicationHooks.as(io.cucumber.java.Scenario)</span>
+      <div>any name
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../embedded31.png' src="../embedded31.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.Addingemployeestepdefinition.user_click_save_button()">
+                <span>And user click save button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>AppHooks.ApplicationHooks.as(io.cucumber.java.Scenario)</span>
+      <div>any name
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../embedded32.png' src="../embedded32.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="5"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Homepage Feature</p>
+            <p class="text-sm">
+              <span>11:28:41 AM</span> / <span>00:00:21:210</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Homepage Feature</h5>
+<span class='badge badge-success'>06.07.2022 11:28:41 AM</span>
+<span class='badge badge-danger'>06.07.2022 11:29:02 AM</span>
+<span class='badge badge-default'>00:00:21:210</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="6"><span class="badge log fail-bg mr-2">Fail</span>Home section count</div>
           <div class="status-avatar float-right mr-4">
             <i class="fa fa-paperclip"></i>
           </div>
@@ -271,52 +664,342 @@ eventsCount: 5,
     </div>
         <div class="">
           <div class="card-body">
-              <div class="step pass-bg" title="StepDefinition.Loginpagestepdefinition.user_is_on_login_page()">
-                <span>Given user is on login page</span>
+              <div class="step pass-bg" title="parallel.Homepagestepdefinition.user_has_already_logged_in_to_application(io.cucumber.datatable.DataTable)">
+                <span>Given user has already logged in to application</span>
+      <div><table class='markup-table table '><tr><td>username</td><td>password</td></tr><tr><td>Admin</td><td>admin123</td></tr></table>
+      </div>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="StepDefinition.Loginpagestepdefinition.user_gets_the_title_of_the_page()">
-                <span>When user gets the title of the page</span>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>AppHooks.ApplicationHooks.as(io.cucumber.java.Scenario)</span>
+      <div>any name
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../embedded6.png' src="../embedded6.png">
+    
+    </div></div>
+</div>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="StepDefinition.Loginpagestepdefinition.page_title_should_be(java.lang.String)">
-                <span>Then page title should be "OrangeHRM"</span>
+              <div class="step pass-bg" title="parallel.Homepagestepdefinition.user_is_on_home_page()">
+                <span>Given user is on Home page</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="StepDefinition.Loginpagestepdefinition.user_is_on_login_page()">
-                <span>Given user is on login page</span>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>AppHooks.ApplicationHooks.as(io.cucumber.java.Scenario)</span>
+      <div>any name
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../embedded10.png' src="../embedded10.png">
+    
+    </div></div>
+</div>
       <div>
       </div>
               </div>
-              <div class="step fail-bg" title="StepDefinition.Loginpagestepdefinition.user_enter_username(java.lang.String)">
-                <span>When user enter username "Admin"</span>
+              <div class="step fail-bg" title="parallel.Homepagestepdefinition.user_gets_home_section(io.cucumber.datatable.DataTable)">
+                <span>Then user gets Home section</span>
+      <div><table class='markup-table table '><tr><td>Admin</td></tr><tr><td>PIM</td></tr><tr><td>Leave</td></tr><tr><td>Time</td></tr><tr><td>Recruitment</td></tr><tr><td>My Info</td></tr><tr><td>Performance</td></tr><tr><td>Dashboard</td></tr><tr><td>Directory</td></tr><tr><td>Maintenance</td></tr><tr><td>Buzz</td></tr></table>
+      </div>
       <div>
-        <textarea disabled class="code-block">java.lang.NullPointerException
-	at com.pages.LoginPage.enterUserName(LoginPage.java:57)
-	at StepDefinition.Loginpagestepdefinition.user_enter_username(Loginpagestepdefinition.java:54)
-	at ✽.user enter username "Admin"(file:///C:/Users/HP/eclipse-workspace/Testing_Framework/src/test/resources/parallel/Loginpage.feature:8)
+        <textarea disabled class="code-block">java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at parallel.Homepagestepdefinition.user_gets_home_section(Homepagestepdefinition.java:51)
+	at ?.user gets Home section(file:///C:/Users/HP/eclipse-workspace/Testing_Framework/src/test/resources/parallel/Homepage.feature:11)
 </textarea>
       
       </div>
               </div>
-              <div class="step skip-bg" title="StepDefinition.Loginpagestepdefinition.user_enter_password(java.lang.String)">
-                <span>And user enter password "admin123"</span>
-      <div>Step skipped
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>AppHooks.ApplicationHooks.as(io.cucumber.java.Scenario)</span>
+      <div>any name
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../embedded14.png' src="../embedded14.png">
+    
+    </div></div>
+</div>
+      <div>
       </div>
               </div>
-              <div class="step skip-bg" title="StepDefinition.Loginpagestepdefinition.user_click_on_login_button()">
-                <span>And user click on login button</span>
+              <div class="step skip-bg" title="parallel.Homepagestepdefinition.accounts_section_count_should_be(java.lang.Integer)">
+                <span>And accounts section count should be 11</span>
       <div>Step skipped
       </div>
               </div>
               <div class="step pass-bg" title="AFTER">
                 <span>AppHooks.ApplicationHooks.tearDown(io.cucumber.java.Scenario)</span>
-      <div>Login_page_title
+      <div>Home_section_count
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../embedded15.png' src="../embedded15.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="7"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Candidate Feature</p>
+            <p class="text-sm">
+              <span>11:28:41 AM</span> / <span>00:00:24:529</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Candidate Feature</h5>
+<span class='badge badge-success'>06.07.2022 11:28:41 AM</span>
+<span class='badge badge-danger'>06.07.2022 11:29:05 AM</span>
+<span class='badge badge-default'>00:00:24:529</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=7</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="8"><span class="badge log pass-bg mr-2">Pass</span>Adding candidate name</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="parallel.Homepagestepdefinition.user_has_already_logged_in_to_application(io.cucumber.datatable.DataTable)">
+                <span>Given user has already logged in to application</span>
+      <div><table class='markup-table table '><tr><td>username</td><td>password</td></tr><tr><td>Admin</td><td>admin123</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>AppHooks.ApplicationHooks.as(io.cucumber.java.Scenario)</span>
+      <div>any name
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../embedded8.png' src="../embedded8.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.Addcandidatestepdefinition.user_navigates_to_candidate_page()">
+                <span>Given user navigates to candidate page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>AppHooks.ApplicationHooks.as(io.cucumber.java.Scenario)</span>
+      <div>any name
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../embedded11.png' src="../embedded11.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.Addcandidatestepdefinition.user_fills_the_form_from_given_sheetname_and_rownumber(java.lang.String,java.lang.Integer)">
+                <span>When user fills the form from given sheetname "Addcandidate" and rownumber 0</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>AppHooks.ApplicationHooks.as(io.cucumber.java.Scenario)</span>
+      <div>any name
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../embedded18.png' src="../embedded18.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.Addcandidatestepdefinition.user_clicks_on_send_button()">
+                <span>And user clicks on send button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>AppHooks.ApplicationHooks.as(io.cucumber.java.Scenario)</span>
+      <div>any name
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../embedded20.png' src="../embedded20.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="9"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Login Page Feature</p>
+            <p class="text-sm">
+              <span>11:28:41 AM</span> / <span>00:00:27:856</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Login Page Feature</h5>
+<span class='badge badge-success'>06.07.2022 11:28:41 AM</span>
+<span class='badge badge-danger'>06.07.2022 11:29:09 AM</span>
+<span class='badge badge-default'>00:00:27:856</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=9</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="10"><span class="badge log pass-bg mr-2">Pass</span>Login page title</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="parallel.Loginpagestepdefinition.user_is_on_login_page()">
+                <span>Given user is on login page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>AppHooks.ApplicationHooks.as(io.cucumber.java.Scenario)</span>
+      <div>any name
           <div class="row mb-3"><div class="col-md-3">
 <img data-featherlight='../embedded1.png' src="../embedded1.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.Loginpagestepdefinition.user_gets_the_title_of_the_page()">
+                <span>When user gets the title of the page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>AppHooks.ApplicationHooks.as(io.cucumber.java.Scenario)</span>
+      <div>any name
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../embedded2.png' src="../embedded2.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.Loginpagestepdefinition.page_title_should_be(java.lang.String)">
+                <span>Then page title should be "OrangeHRM"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>AppHooks.ApplicationHooks.as(io.cucumber.java.Scenario)</span>
+      <div>any name
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../embedded3.png' src="../embedded3.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.Loginpagestepdefinition.user_is_on_login_page()">
+                <span>Given user is on login page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>AppHooks.ApplicationHooks.as(io.cucumber.java.Scenario)</span>
+      <div>any name
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../embedded4.png' src="../embedded4.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.Loginpagestepdefinition.user_enter_username(java.lang.String)">
+                <span>When user enter username "Admin"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>AppHooks.ApplicationHooks.as(io.cucumber.java.Scenario)</span>
+      <div>any name
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../embedded9.png' src="../embedded9.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.Loginpagestepdefinition.user_enter_password(java.lang.String)">
+                <span>And user enter password "admin123"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>AppHooks.ApplicationHooks.as(io.cucumber.java.Scenario)</span>
+      <div>any name
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../embedded13.png' src="../embedded13.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.Loginpagestepdefinition.user_click_on_login_button()">
+                <span>And user click on login button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>AppHooks.ApplicationHooks.as(io.cucumber.java.Scenario)</span>
+      <div>any name
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../embedded25.png' src="../embedded25.png">
     
     </div></div>
 </div>
@@ -338,10 +1021,10 @@ eventsCount: 5,
 </div>
 <div class="test-content-detail"><div class="detail-body"></div></div>
 </div></div>
-<div class="test-wrapper row view exception-view attributes-view">
+<div class="test-wrapper row view category-view attributes-view">
 <div class="test-list">
 <div class="test-list-tools">
-<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
 <ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
 </div>
 <div class="test-list-wrapper scrollable">
@@ -351,12 +1034,12 @@ eventsCount: 5,
 <span class="meta">
 <span class='badge log badge-danger'>1</span>
 </span>
-<p class="name">java.lang.NullPointerException</p>
+<p class="name">@accounts</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>java.lang.NullPointerException</h4>
+<h4>@accounts</h4>
 <span status="fail" class='badge log badge-danger'>1 failed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -370,11 +1053,63 @@ eventsCount: 5,
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>14:00:49 PM</td>
+<td>11:28:41 AM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='9'>When user enter username "Admin"</a>
+<a href="#" class="linked" test-id='5' id='6'>Home section count</a>
 <div class="">
-<span class="badge badge-default">Login Page Feature.Login page title.When user enter username "Admin"</span>
+<span class="badge badge-default">Homepage Feature.Home section count</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">java.lang.AssertionError</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>java.lang.AssertionError</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:28:59 AM</td>
+<td>
+<a href="#" class="linked" test-id='5' id='48'>Then user gets Home section</a>
+<div class="">
+<span class="badge badge-default">Homepage Feature.Home section count.Then user gets Home section</span>
 </div>
 </td>
 </tr>

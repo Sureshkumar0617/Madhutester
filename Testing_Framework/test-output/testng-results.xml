@@ -2,19 +2,19 @@
 <testng-results skipped="0" failed="1" ignored="0" total="5" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="17883" started-at="2022-05-15T23:52:18 IST" finished-at="2022-05-15T23:52:36 IST">
+  <suite name="Default suite" duration-ms="36819" started-at="2022-06-07T11:28:39 IST" finished-at="2022-06-07T11:29:16 IST">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.ParallelRun@17695df3]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.ParallelRun@15bfd87]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Default test" duration-ms="17883" started-at="2022-05-15T23:52:18 IST" finished-at="2022-05-15T23:52:36 IST">
+    <test name="Default test" duration-ms="36819" started-at="2022-06-07T11:28:39 IST" finished-at="2022-06-07T11:29:16 IST">
       <class name="parallel.ParallelRun">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:parallel.ParallelRun@17695df3]" name="setUpClass" is-config="true" duration-ms="368" started-at="2022-05-15T23:52:18 IST" finished-at="2022-05-15T23:52:19 IST">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:parallel.ParallelRun@15bfd87]" name="setUpClass" is-config="true" duration-ms="981" started-at="2022-06-07T11:28:39 IST" finished-at="2022-06-07T11:28:40 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.ParallelRun@17695df3]" name="runScenario" duration-ms="15537" started-at="2022-05-15T23:52:19 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-15T23:52:34 IST">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.ParallelRun@15bfd87]" name="runScenario" duration-ms="33863" started-at="2022-06-07T11:28:40 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-06-07T11:29:14 IST">
           <params>
             <param index="0">
               <value>
@@ -30,34 +30,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.ParallelRun@17695df3]" name="runScenario" duration-ms="12645" started-at="2022-05-15T23:52:19 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-15T23:52:31 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Home section count"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Optional[Homepage Feature]"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError
-at org.junit.Assert.fail(Assert.java:86)
-at org.junit.Assert.assertTrue(Assert.java:41)
-at org.junit.Assert.assertTrue(Assert.java:52)
-at parallel.Homepagestepdefinition.user_gets_home_section(Homepagestepdefinition.java:51)
-at ✽.user gets Home section(classpath:parallel/Homepage.feature:11)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.ParallelRun@17695df3]" name="runScenario" duration-ms="11633" started-at="2022-05-15T23:52:19 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-15T23:52:30 IST">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.ParallelRun@15bfd87]" name="runScenario" duration-ms="28176" started-at="2022-06-07T11:28:40 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-06-07T11:29:09 IST">
           <params>
             <param index="0">
               <value>
@@ -73,11 +46,11 @@ at ✽.user gets Home section(classpath:parallel/Homepage.feature:11)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.ParallelRun@17695df3]" name="runScenario" duration-ms="13618" started-at="2022-05-15T23:52:19 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-15T23:52:32 IST">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.ParallelRun@15bfd87]" name="runScenario" duration-ms="24847" started-at="2022-06-07T11:28:40 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-06-07T11:29:05 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Candidate scenario"]]>
+                <![CDATA["Adding candidate name"]]>
               </value>
             </param>
             <param index="1">
@@ -89,23 +62,130 @@ at ✽.user gets Home section(classpath:parallel/Homepage.feature:11)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.ParallelRun@17695df3]" name="runScenario" duration-ms="13619" started-at="2022-05-15T23:52:19 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-15T23:52:32 IST">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.ParallelRun@15bfd87]" name="runScenario" duration-ms="30993" started-at="2022-06-07T11:28:40 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-06-07T11:29:11 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Candidate scenario"]]>
+                <![CDATA["Assigning leave for employee"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Optional[Candidate Feature]"]]>
+                <![CDATA["Optional[Assign leave feature]"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:parallel.ParallelRun@17695df3]" name="tearDownClass" is-config="true" duration-ms="1953" started-at="2022-05-15T23:52:34 IST" finished-at="2022-05-15T23:52:36 IST">
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.ParallelRun@15bfd87]" name="runScenario" duration-ms="21527" started-at="2022-06-07T11:28:40 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-06-07T11:29:02 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Home section count"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Homepage Feature]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError
+at org.junit.Assert.fail(Assert.java:87)
+at org.junit.Assert.assertTrue(Assert.java:42)
+at org.junit.Assert.assertTrue(Assert.java:53)
+at parallel.Homepagestepdefinition.user_gets_home_section(Homepagestepdefinition.java:51)
+at ✽.user gets Home section(file:///C:/Users/HP/eclipse-workspace/Testing_Framework/src/test/resources/parallel/Homepage.feature:11)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="FAIL" signature="tearDownClass()[pri:0, instance:parallel.ParallelRun@15bfd87]" name="tearDownClass" is-config="true" duration-ms="1922" started-at="2022-06-07T11:29:14 IST" finished-at="2022-06-07T11:29:16 IST">
+          <exception class="java.lang.BootstrapMethodError">
+            <message>
+              <![CDATA[java.lang.NoSuchMethodError: org.apache.pdfbox.pdmodel.interactive.annotation.PDAnnotation.constructAppearances()V]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.BootstrapMethodError: java.lang.NoSuchMethodError: org.apache.pdfbox.pdmodel.interactive.annotation.PDAnnotation.constructAppearances()V
+at org.vandeseer.easytable.drawing.cell.ParagraphCellDrawer.drawContent(ParagraphCellDrawer.java:57)
+at org.vandeseer.easytable.TableDrawer.lambda$new$0(TableDrawer.java:61)
+at org.vandeseer.easytable.TableDrawer.drawRow(TableDrawer.java:170)
+at org.vandeseer.easytable.TableDrawer.drawWithFunction(TableDrawer.java:153)
+at org.vandeseer.easytable.TableDrawer.lambda$drawPage$1(TableDrawer.java:83)
+at java.lang.Iterable.forEach(Unknown Source)
+at org.vandeseer.easytable.TableDrawer.drawPage(TableDrawer.java:82)
+at org.vandeseer.easytable.TableDrawer.draw(TableDrawer.java:78)
+at tech.grasshopper.pdf.chapter.detailed.DetailedRowComponent.display(DetailedRowComponent.java:90)
+at tech.grasshopper.pdf.chapter.detailed.DetailedPage.lambda$0(DetailedPage.java:42)
+at java.util.ArrayList.forEach(Unknown Source)
+at tech.grasshopper.pdf.chapter.detailed.DetailedPage.createPage(DetailedPage.java:39)
+at tech.grasshopper.pdf.chapter.detailed.DetailedChapter.sendToPage(DetailedChapter.java:115)
+at tech.grasshopper.pdf.chapter.detailed.DetailedChapter.createAndSendPageData(DetailedChapter.java:83)
+at tech.grasshopper.pdf.chapter.detailed.DetailedChapter.createChapter(DetailedChapter.java:28)
+at tech.grasshopper.pdf.PDFCucumberReport.lambda$0(PDFCucumberReport.java:100)
+at java.util.ArrayList.forEach(Unknown Source)
+at tech.grasshopper.pdf.PDFCucumberReport.createReport(PDFCucumberReport.java:100)
+at tech.grasshopper.pdf.extent.ExtentPDFCucumberReporter.flush(ExtentPDFCucumberReporter.java:66)
+at tech.grasshopper.pdf.extent.ExtentPDFCucumberReporter.access$1(ExtentPDFCucumberReporter.java:57)
+at tech.grasshopper.pdf.extent.ExtentPDFCucumberReporter$1.onNext(ExtentPDFCucumberReporter.java:42)
+at tech.grasshopper.pdf.extent.ExtentPDFCucumberReporter$1.onNext(ExtentPDFCucumberReporter.java:1)
+at io.reactivex.rxjava3.subjects.PublishSubject$PublishDisposable.onNext(PublishSubject.java:310)
+at io.reactivex.rxjava3.subjects.PublishSubject.onNext(PublishSubject.java:226)
+at com.aventstack.extentreports.ReactiveSubject.onFlush(ReactiveSubject.java:83)
+at com.aventstack.extentreports.AbstractProcessor.onFlush(AbstractProcessor.java:85)
+at com.aventstack.extentreports.ExtentReports.flush(ExtentReports.java:279)
+at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter.finishReport(ExtentCucumberAdapter.java:296)
+at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter.access$6(ExtentCucumberAdapter.java:295)
+at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter$8.receive(ExtentCucumberAdapter.java:132)
+at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter$8.receive(ExtentCucumberAdapter.java:1)
+at io.cucumber.core.eventbus.AbstractEventPublisher.send(AbstractEventPublisher.java:51)
+at io.cucumber.core.eventbus.AbstractEventBus.send(AbstractEventBus.java:12)
+at io.cucumber.core.runtime.CucumberExecutionContext.emitTestRunFinished(CucumberExecutionContext.java:93)
+at io.cucumber.core.runtime.CucumberExecutionContext.finishTestRun(CucumberExecutionContext.java:74)
+at io.cucumber.testng.TestNGCucumberRunner.finish(TestNGCucumberRunner.java:126)
+at io.cucumber.testng.AbstractTestNGCucumberTests.tearDownClass(AbstractTestNGCucumberTests.java:53)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:217)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:130)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.NoSuchMethodError: org.apache.pdfbox.pdmodel.interactive.annotation.PDAnnotation.constructAppearances()V
+at java.lang.invoke.MethodHandleNatives.resolve(Native Method)
+at java.lang.invoke.MemberName$Factory.resolve(Unknown Source)
+at java.lang.invoke.MemberName$Factory.resolveOrFail(Unknown Source)
+at java.lang.invoke.MethodHandles$Lookup.resolveOrFail(Unknown Source)
+at java.lang.invoke.MethodHandles$Lookup.linkMethodHandleConstant(Unknown Source)
+at java.lang.invoke.MethodHandleNatives.linkMethodHandleConstant(Unknown Source)
+... 63 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.BootstrapMethodError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
