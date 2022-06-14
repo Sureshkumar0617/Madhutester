@@ -1,0 +1,94 @@
+
+Scenario: login page                    [90m# src/test/resources/parallel/Login.feature:3[0m
+  [32mGiven [0m[32muser is on login page[0m           [90m# parallel.LoginStep_Definition.user_is_on_login_page()[0m
+
+    Embedding screenshots [image/png 841641 bytes]
+
+  [32mWhen [0m[32muser enter Username [0m[32m[1m"Suresh1047"[0m [90m# parallel.LoginStep_Definition.user_enter_username(java.lang.String)[0m
+
+    Embedding screenshots [image/png 842109 bytes]
+
+  [32mAnd [0m[32muser enter Password [0m[32m[1m"1795OK"[0m      [90m# parallel.LoginStep_Definition.user_enter_password(java.lang.String)[0m
+
+    Embedding screenshots [image/png 842022 bytes]
+
+  [32mAnd [0m[32muser click on login button[0m        [90m# parallel.LoginStep_Definition.user_click_on_login_button()[0m
+
+    Embedding screenshots [image/png 200631 bytes]
+
+
+Scenario: Selecting Hotel                                                     [90m# src/test/resources/parallel/SearchHotel.feature:17[0m
+  [32mGiven [0m[32muser has already logged in to application[0m                             [90m# parallel.SearchHotelStep_Definition.user_has_already_logged_in_to_application(io.cucumber.datatable.DataTable)[0m
+
+    Embedding screenshots [image/png 203938 bytes]
+
+  [32mGiven [0m[32muser navigates to Search Hotel Page[0m                                   [90m# parallel.SearchHotelStep_Definition.user_navigates_to_search_hotel_page()[0m
+
+    Embedding screenshots [image/png 203938 bytes]
+
+  [32mWhen [0m[32muser fills the form from given sheetname [0m[32m[1m"SearchHotel"[0m[32m and rownumber [0m[32m[1m0[0m [90m# parallel.SearchHotelStep_Definition.user_fills_the_form_from_given_sheetname_and_rownumber_row_number(java.lang.String,java.lang.Integer)[0m
+
+    Embedding screenshots [image/png 202864 bytes]
+
+  [32mAnd [0m[32muser clicks on Search[0m                                                   [90m# parallel.SearchHotelStep_Definition.user_clicks_on_search()[0m
+
+    Embedding screenshots [image/png 199786 bytes]
+
+  [32mThen [0m[32muser clicks on Select[0m                                                  [90m# parallel.SearchHotelStep_Definition.user_clicks_on_select()[0m
+
+    Embedding screenshots [image/png 199876 bytes]
+
+  [32mAnd [0m[32muser clicks on continue[0m                                                 [90m# parallel.SearchHotelStep_Definition.user_clicks_on_continue()[0m
+
+    Embedding screenshots [image/png 212387 bytes]
+
+
+Scenario: Adding Payment Method                     [90m# src/test/resources/parallel/SearchPaymentMethod.feature:9[0m
+  [32mGiven [0m[32muser has already logged in to application[0m   [90m# parallel.SearchHotelStep_Definition.user_has_already_logged_in_to_application(io.cucumber.datatable.DataTable)[0m
+
+    Embedding screenshots [image/png 203938 bytes]
+
+  [32mGiven [0m[32muser navigate to Payment method process[0m     [90m# parallel.SearchPaymentStep_Definition.user_navigate_to_payment_method_process()[0m
+
+    Embedding screenshots [image/png 209612 bytes]
+
+  [32mWhen [0m[32muser enter first name [0m[32m[1m"Aadhitya"[0m             [90m# parallel.SearchPaymentStep_Definition.user_enter_first_name(java.lang.String)[0m
+
+    Embedding screenshots [image/png 210258 bytes]
+
+  [32mAnd [0m[32muser enter last name [0m[32m[1m"rajan"[0m                  [90m# parallel.SearchPaymentStep_Definition.user_enter_last_name(java.lang.String)[0m
+
+    Embedding screenshots [image/png 210494 bytes]
+
+  [32mThen [0m[32muser enter billing address [0m[32m[1m"No4 Chennai"[0m     [90m# parallel.SearchPaymentStep_Definition.user_enter_billing_address(java.lang.String)[0m
+
+    Embedding screenshots [image/png 211032 bytes]
+
+  [32mThen [0m[32muser enter Credit card no [0m[32m[1m"5754788954621325"[0m [90m# parallel.SearchPaymentStep_Definition.user_enter_credit_card_no(java.lang.String)[0m
+
+    Embedding screenshots [image/png 211871 bytes]
+
+  [32mThen [0m[32muser enter Credit card type [0m[32m[1m"VISA"[0m           [90m# parallel.SearchPaymentStep_Definition.user_enter_credit_card_type(java.lang.String)[0m
+
+    Embedding screenshots [image/png 210172 bytes]
+
+  [32mThen [0m[32muser enter expiry data [0m[32m[1m"June"[0m                [90m# parallel.SearchPaymentStep_Definition.user_enter_expiry_data(java.lang.String)[0m
+
+    Embedding screenshots [image/png 209219 bytes]
+
+  [32mThen [0m[32muser enter expriy data [0m[32m[1m"2023"[0m                [90m# parallel.SearchPaymentStep_Definition.user_enter_expriy_data(java.lang.String)[0m
+
+    Embedding screenshots [image/png 208772 bytes]
+
+  [32mAnd [0m[32muser enter Cvv number [0m[32m[1m"256"[0m                   [90m# parallel.SearchPaymentStep_Definition.user_enter_cvv_number(java.lang.String)[0m
+
+    Embedding screenshots [image/png 208632 bytes]
+
+  [32mThen [0m[32muser click on Book now tab[0m                   [90m# parallel.SearchPaymentStep_Definition.user_click_on_book_now_tab()[0m
+
+    Embedding screenshots [image/png 208632 bytes]
+
+  [32mThen [0m[32muser click on logout[0m                         [90m# parallel.SearchPaymentStep_Definition.user_click_on_logout()[0m
+
+    Embedding screenshots [image/png 174742 bytes]
+
