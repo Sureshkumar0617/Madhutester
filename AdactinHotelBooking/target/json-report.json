@@ -1,94 +1,58 @@
 
-Scenario: login page                    [90m# src/test/resources/parallel/Login.feature:3[0m
-  [32mGiven [0m[32muser is on login page[0m           [90m# parallel.LoginStep_Definition.user_is_on_login_page()[0m
+Scenario: login page                                 [90m# src/test/resources/parallel/Login.feature:3[0m
+  [32mGiven [0m[32muser is on login page[0m                        [90m# parallel.LoginStep_Definition.user_is_on_login_page()[0m
 
     Embedding screenshots [image/png 841641 bytes]
 
-  [32mWhen [0m[32muser enter Username [0m[32m[1m"Suresh1047"[0m [90m# parallel.LoginStep_Definition.user_enter_username(java.lang.String)[0m
+  [31mThen [0m[31mforgot your password link should be displayed[0m [90m# parallel.LoginStep_Definition.forgot_your_password_link_should_be_displayed()[0m
+      [31morg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"link text","selector":"Forgot Password?12"}
+  (Session info: chrome=102.0.5005.115)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SUCHI', ip: '192.168.0.179', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_331'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:63811}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: debf22b6a049418512a38957f36bfcec
+*** Element info: {Using=link text, value=Forgot Password?12}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:380)
+	at org.openqa.selenium.By$ByLinkText.findElement(By.java:220)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.pages.Loginpage.isForgotPwdLinkExist(Loginpage.java:42)
+	at parallel.LoginStep_Definition.forgot_your_password_link_should_be_displayed(LoginStep_Definition.java:37)
+	at ✽.forgot your password link should be displayed(file:///C:/Users/HP/eclipse-workspace/AdactinHotelBooking/src/test/resources/parallel/Login.feature:5)
+[0m
+
+    Embedding screenshots [image/png 841641 bytes]
+
+
+    Embedding login_page [image/png 619030 bytes]
+
+
+Scenario: Login with correct credentials [90m# src/test/resources/parallel/Login.feature:7[0m
+  [32mGiven [0m[32muser is on login page[0m            [90m# parallel.LoginStep_Definition.user_is_on_login_page()[0m
+
+    Embedding screenshots [image/png 841641 bytes]
+
+  [32mWhen [0m[32muser enter Username [0m[32m[1m"Suresh1047"[0m  [90m# parallel.LoginStep_Definition.user_enter_username(java.lang.String)[0m
 
     Embedding screenshots [image/png 842109 bytes]
 
-  [32mAnd [0m[32muser enter Password [0m[32m[1m"1795OK"[0m      [90m# parallel.LoginStep_Definition.user_enter_password(java.lang.String)[0m
+  [32mAnd [0m[32muser enter Password [0m[32m[1m"1795OK"[0m       [90m# parallel.LoginStep_Definition.user_enter_password(java.lang.String)[0m
 
-    Embedding screenshots [image/png 842022 bytes]
+    Embedding screenshots [image/png 842009 bytes]
 
-  [32mAnd [0m[32muser click on login button[0m        [90m# parallel.LoginStep_Definition.user_click_on_login_button()[0m
+  [32mAnd [0m[32muser click on login button[0m         [90m# parallel.LoginStep_Definition.user_click_on_login_button()[0m
 
-    Embedding screenshots [image/png 200631 bytes]
-
-
-Scenario: Selecting Hotel                                                     [90m# src/test/resources/parallel/SearchHotel.feature:17[0m
-  [32mGiven [0m[32muser has already logged in to application[0m                             [90m# parallel.SearchHotelStep_Definition.user_has_already_logged_in_to_application(io.cucumber.datatable.DataTable)[0m
-
-    Embedding screenshots [image/png 203938 bytes]
-
-  [32mGiven [0m[32muser navigates to Search Hotel Page[0m                                   [90m# parallel.SearchHotelStep_Definition.user_navigates_to_search_hotel_page()[0m
-
-    Embedding screenshots [image/png 203938 bytes]
-
-  [32mWhen [0m[32muser fills the form from given sheetname [0m[32m[1m"SearchHotel"[0m[32m and rownumber [0m[32m[1m0[0m [90m# parallel.SearchHotelStep_Definition.user_fills_the_form_from_given_sheetname_and_rownumber_row_number(java.lang.String,java.lang.Integer)[0m
-
-    Embedding screenshots [image/png 202864 bytes]
-
-  [32mAnd [0m[32muser clicks on Search[0m                                                   [90m# parallel.SearchHotelStep_Definition.user_clicks_on_search()[0m
-
-    Embedding screenshots [image/png 199786 bytes]
-
-  [32mThen [0m[32muser clicks on Select[0m                                                  [90m# parallel.SearchHotelStep_Definition.user_clicks_on_select()[0m
-
-    Embedding screenshots [image/png 199876 bytes]
-
-  [32mAnd [0m[32muser clicks on continue[0m                                                 [90m# parallel.SearchHotelStep_Definition.user_clicks_on_continue()[0m
-
-    Embedding screenshots [image/png 212387 bytes]
-
-
-Scenario: Adding Payment Method                     [90m# src/test/resources/parallel/SearchPaymentMethod.feature:9[0m
-  [32mGiven [0m[32muser has already logged in to application[0m   [90m# parallel.SearchHotelStep_Definition.user_has_already_logged_in_to_application(io.cucumber.datatable.DataTable)[0m
-
-    Embedding screenshots [image/png 203938 bytes]
-
-  [32mGiven [0m[32muser navigate to Payment method process[0m     [90m# parallel.SearchPaymentStep_Definition.user_navigate_to_payment_method_process()[0m
-
-    Embedding screenshots [image/png 209612 bytes]
-
-  [32mWhen [0m[32muser enter first name [0m[32m[1m"Aadhitya"[0m             [90m# parallel.SearchPaymentStep_Definition.user_enter_first_name(java.lang.String)[0m
-
-    Embedding screenshots [image/png 210258 bytes]
-
-  [32mAnd [0m[32muser enter last name [0m[32m[1m"rajan"[0m                  [90m# parallel.SearchPaymentStep_Definition.user_enter_last_name(java.lang.String)[0m
-
-    Embedding screenshots [image/png 210494 bytes]
-
-  [32mThen [0m[32muser enter billing address [0m[32m[1m"No4 Chennai"[0m     [90m# parallel.SearchPaymentStep_Definition.user_enter_billing_address(java.lang.String)[0m
-
-    Embedding screenshots [image/png 211032 bytes]
-
-  [32mThen [0m[32muser enter Credit card no [0m[32m[1m"5754788954621325"[0m [90m# parallel.SearchPaymentStep_Definition.user_enter_credit_card_no(java.lang.String)[0m
-
-    Embedding screenshots [image/png 211871 bytes]
-
-  [32mThen [0m[32muser enter Credit card type [0m[32m[1m"VISA"[0m           [90m# parallel.SearchPaymentStep_Definition.user_enter_credit_card_type(java.lang.String)[0m
-
-    Embedding screenshots [image/png 210172 bytes]
-
-  [32mThen [0m[32muser enter expiry data [0m[32m[1m"June"[0m                [90m# parallel.SearchPaymentStep_Definition.user_enter_expiry_data(java.lang.String)[0m
-
-    Embedding screenshots [image/png 209219 bytes]
-
-  [32mThen [0m[32muser enter expriy data [0m[32m[1m"2023"[0m                [90m# parallel.SearchPaymentStep_Definition.user_enter_expriy_data(java.lang.String)[0m
-
-    Embedding screenshots [image/png 208772 bytes]
-
-  [32mAnd [0m[32muser enter Cvv number [0m[32m[1m"256"[0m                   [90m# parallel.SearchPaymentStep_Definition.user_enter_cvv_number(java.lang.String)[0m
-
-    Embedding screenshots [image/png 208632 bytes]
-
-  [32mThen [0m[32muser click on Book now tab[0m                   [90m# parallel.SearchPaymentStep_Definition.user_click_on_book_now_tab()[0m
-
-    Embedding screenshots [image/png 208632 bytes]
-
-  [32mThen [0m[32muser click on logout[0m                         [90m# parallel.SearchPaymentStep_Definition.user_click_on_logout()[0m
-
-    Embedding screenshots [image/png 174742 bytes]
+    Embedding screenshots [image/png 200632 bytes]
 

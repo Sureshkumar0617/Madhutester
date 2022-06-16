@@ -13,6 +13,7 @@ public class Loginpage {
 		private By Userid = By.id("username");
 		private By Passcode = By.id("password");
 		private By Loginbutton = By.id("login");
+		private By Forgotpwdlink = By.linkText("Forgot Password?12");
 
 		
 		
@@ -36,6 +37,12 @@ public class Loginpage {
 			
 
 		}
+		
+		public boolean isForgotPwdLinkExist() {
+			return driver.findElement(Forgotpwdlink).isDisplayed();
+			
+			}
+
 
 		
 

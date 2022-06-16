@@ -22,8 +22,9 @@ public class SearchHotelStep_Definition {
 	private Loginpage loginPage = new Loginpage(Driver_Factory.getDriver());
 	private SearchHotelpage SearchHotelpage;
 	
-
-	@Given("user has already logged in to application")
+	
+	
+		@Given("user has already logged in to application")
 	public void user_has_already_logged_in_to_application(DataTable logTable) {
 		
 		List<Map<String, String>> logList = logTable.asMaps();

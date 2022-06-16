@@ -18,6 +18,8 @@ public class SearchPaymentStep_Definition {
 	
 	private  SearchPaymentpage searchpaymentmethod =  new SearchPaymentpage(Driver_Factory.getDriver());
 
+
+	
 	
 	
 	
