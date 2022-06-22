@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="0" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Amazon Application Test Automation Test Suite" duration-ms="4" started-at="2022-06-22T04:45:26Z" finished-at="2022-06-22T04:45:26Z">
+    <groups>
+    </groups>
+    <test name="Free CRM App Test Cases" duration-ms="4" started-at="2022-06-22T04:45:26Z" finished-at="2022-06-22T04:45:26Z">
+    </test> <!-- Free CRM App Test Cases -->
+  </suite> <!-- Amazon Application Test Automation Test Suite -->
+</testng-results>
