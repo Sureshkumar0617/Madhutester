@@ -1,11 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Amazon Application Test Automation Test Suite">
-	<test name="Amazon Application Test Cases">
+<suite name="Suite">
+	<listeners>
+		<listener class-name="com.qa.ExtentReportListener.ExtentReporterNG">
+		</listener>
+	</listeners>
+	<test thread-count="5" name="Sanity">
+		<parameter name="browser" value="Chrome"></parameter>
+		<groups>
+			<run>
+				<include name="Sanity"></include>
+			</run>
+		</groups>
 		<classes>
-			<class name="com.crm.qa.testcases.LoginPageTest"></class>
-			<class name="com.crm.qa.testcases.HomePageTest"></class>
-			
-		</classes>
-	</test>
-</suite>
+			<class name="com.amazon.qa.testcases.HomePage_WindowHandling" />
+			<class name="com.amazon.qa.testcases.Loginpage" />
+					</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

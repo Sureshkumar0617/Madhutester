@@ -7,7 +7,7 @@
 	</listeners>
 
 
-	<test name="Free CRM App Test Cases">
+	<test name="Amazon Application Test Cases">
 		<classes>
 			<class name="com.amazon.qa.testcases.Loginpage"></class>
 			<class name="com.amazon.qa.testcases.HomePage_WindowHandling"></class>
