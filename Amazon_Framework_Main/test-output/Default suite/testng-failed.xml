@@ -5,8 +5,8 @@
     <classes>
       <class name="extentreports.LoginPage1">
         <methods>
-          <include name="YourLogo_test"/>
           <include name="afterClass"/>
+          <include name="LoginPage1_test"/>
           <include name="beforeClass"/>
         </methods>
       </class> <!-- extentreports.LoginPage1 -->

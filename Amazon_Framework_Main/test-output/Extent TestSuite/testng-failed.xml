@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Extent TestSuite]">
   <test thread-count="5" name="chrome Test(failed)">
     <classes>
-      <class name="extentreports.Yourlogo">
+      <class name="extentreports.LoginPage1">
         <methods>
           <include name="afterClass"/>
+          <include name="LoginPage1_test"/>
           <include name="beforeClass"/>
-          <include name="Youlogo1_test"/>
         </methods>
-      </class> <!-- extentreports.Yourlogo -->
+      </class> <!-- extentreports.LoginPage1 -->
     </classes>
   </test> <!-- chrome Test(failed) -->
 </suite> <!-- Failed suite [Extent TestSuite] -->

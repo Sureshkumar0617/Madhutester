@@ -7,7 +7,7 @@
 <test name = "chrome Test">
 
 <classes>
-<class name = "extentreports.Yourlogo"/>
+<class name = "extentreports.LoginPage1"/>
 </classes>
 
 </test>
