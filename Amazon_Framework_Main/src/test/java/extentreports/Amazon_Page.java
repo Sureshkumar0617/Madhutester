@@ -23,7 +23,7 @@ import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 
-public class LoginPage1 {
+public class Amazon_Page {
 
 	private WebDriver driver;
 	private String baseUrl;
@@ -64,7 +64,9 @@ public class LoginPage1 {
 	public void LoginPage1_test() throws Exception {
 
 		WebElement siginbutton = driver.findElement(By.id("nav-signin-tooltip"));
+		
 		siginbutton.click();
+		
 		test.log(LogStatus.INFO, "Click on siguplink");
 
 		Utility.captureScreenshot(driver, "siginbutton");
@@ -110,9 +112,7 @@ public class LoginPage1 {
 
 		Thread.sleep(2000);
 		String parentTab = driver.getWindowHandle();
-		
-		// Find out the exact Samsung Smart watch and click on the searched option
-		
+			
 		WebElement watchsearch = driver.findElement(By.linkText("44 Ltrs Casual Backpack (11629-Wolf_Black)"));
 		
 		watchsearch.click();

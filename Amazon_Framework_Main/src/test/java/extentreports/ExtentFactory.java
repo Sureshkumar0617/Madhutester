@@ -9,7 +9,7 @@ public class ExtentFactory {
 		
 	ExtentReports extent;
 	
-     String Path = "C:\\Users\\HP\\eclipse-workspace\\Amazon_Framework_Main\\test-output\\reportdemo.html";
+     String Path = "C:\\Users\\HP\\eclipse-workspace\\Amazon_Framework_Main\\test-output\\sureshreportdemo.html";
      extent = new ExtentReports(Path, false);
 
 return extent;

@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="extentreports.LoginPage1">
+      <class name="extentreports.Amazon_Page">
         <methods>
-          <include name="afterClass"/>
-          <include name="LoginPage1_test"/>
           <include name="beforeClass"/>
+          <include name="LoginPage1_test"/>
+          <include name="afterClass"/>
         </methods>
-      </class> <!-- extentreports.LoginPage1 -->
+      </class> <!-- extentreports.Amazon_Page -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
