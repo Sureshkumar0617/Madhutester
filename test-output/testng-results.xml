@@ -2,35 +2,35 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-11-21T11:56:01 IST" name="Default suite" finished-at="2022-11-21T11:58:39 IST" duration-ms="158531">
+  <suite started-at="2022-11-22T13:16:00 IST" name="Default suite" finished-at="2022-11-22T13:19:02 IST" duration-ms="182181">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner.MyTestRunner@183ec003]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2022-11-21T11:56:01 IST" name="Default test" finished-at="2022-11-21T11:58:39 IST" duration-ms="158531">
+    <test started-at="2022-11-22T13:16:00 IST" name="Default test" finished-at="2022-11-22T13:19:02 IST" duration-ms="182181">
       <class name="testrunner.MyTestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testrunner.MyTestRunner@183ec003]" started-at="2022-11-21T11:56:01 IST" name="setUpClass" finished-at="2022-11-21T11:56:02 IST" duration-ms="751" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testrunner.MyTestRunner@183ec003]" started-at="2022-11-22T13:16:00 IST" name="setUpClass" finished-at="2022-11-22T13:16:01 IST" duration-ms="743" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@1aade3c]]>
+                <![CDATA[org.testng.TestRunner@2ba4b32b]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner.MyTestRunner@183ec003]" started-at="2022-11-21T11:56:02 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-11-21T11:58:34 IST" duration-ms="152725" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner.MyTestRunner@183ec003]" started-at="2022-11-22T13:16:01 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-11-22T13:18:58 IST" duration-ms="176960" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA["IRP Renew fleet"]]>
+                <![CDATA["Renew with Reinstate"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Renew Fleet feature"]]>
+                <![CDATA["Renewal after Reinstatement"]]>
               </value>
             </param>
           </params>
@@ -41,15 +41,15 @@
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException: Cannot invoke "java.io.FileOutputStream.close()" because "out" is null
 at com.celtic.automation.cmcs.util.WriteExcelUtil.setCellData(WriteExcelUtil.java:92)
-at parallel.RWC_001.user_will_navigate_to_account_section_and_fill_the_data_and_validate_message(RWC_001.java:134)
-at ✽.User will navigate to account section and fill the data(file:///C:/Users/HP/Downloads/gitbuild-MyLocalRepository(1)/gitbuild-MyLocalRepository/updated_celtic_project-main/src/test/resources/Parallel/RWC_001.feature:6)
+at parallel.RWC_002.user_should_navigate_to_account_screen_and_provides_all_the_required_input_to_proceed(RWC_002.java:122)
+at ✽.User should navigate to Account screen and provides all the required input to proceed(file:///C:/Users/HP/Downloads/gitbuild-MyLocalRepository(1)/gitbuild-MyLocalRepository/updated_celtic_project-main/src/test/resources/Parallel/RWC_002.feature:6)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testrunner.MyTestRunner@183ec003]" started-at="2022-11-21T11:58:34 IST" name="tearDownClass" finished-at="2022-11-21T11:58:39 IST" duration-ms="5027" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testrunner.MyTestRunner@183ec003]" started-at="2022-11-22T13:18:58 IST" name="tearDownClass" finished-at="2022-11-22T13:19:02 IST" duration-ms="4453" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

@@ -1,0 +1,10 @@
+[INFO ] 2022-11-22 13:06:41.381 [main] RWC_001 - Opened Browser
+[INFO ] 2022-11-22 13:06:56.598 [main] RWC_001 - ****************************** Login to the application  *****************************************
+[INFO ] 2022-11-22 13:06:57.019 [main] RWC_001 - *** Enter Username ***
+[INFO ] 2022-11-22 13:06:57.354 [main] RWC_001 - *** Enter Password ***
+[INFO ] 2022-11-22 13:06:59.653 [main] RWC_001 - *** Click Login ***
+[INFO ] 2022-11-22 13:07:07.134 [main] RWC_001 - *** Click IRP ***
+[INFO ] 2022-11-22 13:07:08.700 [main] RWC_001 - *** Click RenewFleet ***
+[INFO ] 2022-11-22 13:07:10.327 [main] RWC_001 - *** Enter Account Number ***
+[INFO ] 2022-11-22 13:07:10.706 [main] RWC_001 - *** Enter FleetNo ***
+[INFO ] 2022-11-22 13:07:11.044 [main] RWC_001 - *** Click FleetYear ***

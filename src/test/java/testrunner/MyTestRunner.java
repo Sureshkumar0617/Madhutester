@@ -11,7 +11,7 @@ import io.cucumber.testng.CucumberOptions;
 		monochrome = true,
 		publish = true,
 		glue = { "parallel","apphooks" },
-		features = { "src/test/resources/Parallel/RWC_001.feature"}
+		features = { "src/test/resources/Parallel/RWC_002.feature"}
 		)
 
 

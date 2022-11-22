@@ -808,7 +808,7 @@ ImageIO.write(fpScreenshot.getImage(),"PNG",new File(destination));
 	 * To open downloaded files in Internet explorer
 	 * @author 
 	 * @param element
-	 * @throws InterruptedException
+	 * @throws IngterruptedException
 	 */
 	public static void opendownloadedDocument(WebElement element) throws Exception {
 

@@ -160,6 +160,7 @@ public class CommonObjects {
 			
 		}
 		public void validateInfoMessage(String inforMsg) {
+			ElementUtil.highlightElement(driver, informationMessage);
 			if(informationMessage.getText().equalsIgnoreCase(inforMsg)) {
 			assert true;
 			}
@@ -180,13 +181,16 @@ public class CommonObjects {
 		clickAddOrUpdateComment();
 	}
 	public String fetchErrorMessage(String ExpectederrorMessage) {
+		
 		String actualErrorMessage=null;
 		String actualCumExpected=null;
 		for(WebElement ele:errorMsgsList) {
 			actualErrorMessage	=ElementUtil.FetchTextBoxValuewithText(ele);
+			ElementUtil.highlightElement(driver, errorMessage);
 			if(actualErrorMessage.equalsIgnoreCase(ExpectederrorMessage)) {
 				actualCumExpected=actualErrorMessage;
 				return actualCumExpected;
+
 			}
 		}
 		return actualCumExpected;

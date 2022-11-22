@@ -1,7 +1,7 @@
 package parallel;
 
-import java.io.IOException;import java.util.ArrayList;
-
+import java.io.IOException;
+import java.util.ArrayList;
 import com.celtic.automation.cmcs.factory.DriverFactory;
 import com.celtic.automation.cmcs.pages.AccountTabPage;
 import com.celtic.automation.cmcs.pages.BillingTab;
@@ -73,11 +73,6 @@ public class RWC_001 {
 	public void user_login_as_a_internal_user() throws Exception {
 		
 		log.info("Opened Browser");
-		log.fatal("fatal msg");
-
-		log.debug("for debug");
-		log.error("error message");
-		log.warn("warning message");
 		
 		CommonStep.scenario.log("Launch the application using URL and login with valid credentials");	
 		//excelutil.meth(config.readRWCexcel());
